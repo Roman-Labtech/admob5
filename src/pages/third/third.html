@@ -27,30 +27,19 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>S треугольника</ion-title>
-
+    <ion-title>Площадь</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h3 style="text-align: center">Ionic Menu Starter 4.2</h3>
+  <h3 style="text-align: center">По двум сторонам <br>и углу между ними</h3>
 
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
   </p>
+ 
   <br>
-
-  <br>
- <ion-card (click)="firstgo()">
-  <ion-card-header>
-	  <b>По основанию и высоте</b>
-  </ion-card-header>
-  <ion-card-content>
-    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-  </ion-card-content>
-</ion-card>
-
-  <ion-card (click)="secondgo()">
+<!-- <ion-card (click)="link3stor()">
   <ion-card-header>
 	  <b>По трем сторонам</b>
   </ion-card-header>
@@ -58,8 +47,17 @@
     The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
   </ion-card-content>
 </ion-card>
+
+  <ion-card (click)="showAlert()">
+  <ion-card-header>
+	  <b>По основанию и высоте</b>
+  </ion-card-header>
+  <ion-card-content>
+    The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+  </ion-card-content>
+</ion-card>
  
-  <ion-card (click)="thirdgo()">
+  <ion-card (click)="showAlert()">
   <ion-card-header>
 	  <b>По 2-м сторонам и углу</b>
   </ion-card-header>
@@ -67,42 +65,33 @@
     The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
   </ion-card-content>
 </ion-card>
+ -->
   <br>
-<ion-list> 
+<ion-list>
+
+  
     <ion-item>
-    <ion-input type="number" placeholder="Сторона 1" id="inp1" [(ngModel)]="inp1" ></ion-input>
+    <ion-label color="primary" fixed>Сторона A</ion-label>
+    <ion-input type="number" placeholder="....." id="inp1" [(ngModel)]="inp1"></ion-input>
+  </ion-item>
+ <br>
+  <ion-item>
+    <ion-label color="primary" fixed>Сторона B</ion-label>
+    <ion-input type="number" placeholder="....." id="inp2" [(ngModel)]="inp2"></ion-input>
   </ion-item>
  <br>
    <ion-item>
-    <ion-input type="number" placeholder="Сторона 2" id="inp2" [(ngModel)]="inp2" ></ion-input>
+     <ion-label color="primary" fixed>Угол a (град.) </ion-label>
+    <ion-input type="number" placeholder="....." id="inp3" [(ngModel)]="inp4" ></ion-input>
   </ion-item><br>
-     <ion-item>
-    <ion-input type="number" placeholder="Сторона 3" id="inp3" [(ngModel)]="inp3" ></ion-input>
-  </ion-item>
-  <br>
-  <ion-item>
-    <ion-input type="number" placeholder="Угол" id="inp4" [(ngModel)]="inp4" ></ion-input>
-  </ion-item>
-  <br>
-    <ion-item>
-    <ion-input type="number" placeholder="Высота" id="inp5" [(ngModel)]="inp5" ></ion-input>
-  </ion-item>
+
 </ion-list>
 
-<div style="background:url('../img/geron.jpg'; background-color:blue;"></div>
-	<ion-img src="geron.jpg"></ion-img>
-   <ion-img width="180" height="180" src="/home/geron.jpg"></ion-img>
-    <br><br>
-    <button ion-button (click)="ygol_i_2_storony1()">Test</button>
-<br><br>
-      <button ion-button secondary (click)="showAlert()" >Show banner</button>
-<br><br>
-    <button ion-button (click)="showInterstitialAd()">Show the interstitial Ad</button>
-    <br><br>
     
-
+    <button ion-button (click)="ygol_i_2_storony()">
+      ВЫЧИСЛИТЬ
+    </button>
        
-
-       
+   
 
 </ion-content>

@@ -4,7 +4,9 @@ import { AdMobPro } from '@ionic-native/admob-pro';
 import { Platform } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 import { NgModel } from '@angular/forms';
-import { FirstPage } from '../pages/first/first';
+import { FirstPage } from '../first/first';
+import { SecondPage } from '../second/second';
+import { ThirdPage } from '../third/third';
 
 
 
@@ -47,32 +49,6 @@ export class HomePage {
 	
 
 	
-	showAlert() {
-    var xx;	
-	var x1=this.inp1;
-	var x2=this.inp2;
-	var x3=this.inp3;
-var a=x1;
-var b=x2;
-var c=x3;
-
-		
-	function tristor();	
-	var x1=this.inp1;
-		x1=Number(x1);
-	var x2=this.inp2;
-		x2=Number(x2);	
-	var x3=this.inp3; 
-		x3=Number(x3);
-	var s=x1*x2*x3;	
-		
-    let alert = this.alertCtrl.create({
-      title: 'New Friend!',
-      subTitle: 'Total S=' + '&nbsp'+ '&nbsp'+ '&nbsp'+ '&nbsp'+ s,
-      buttons: ['OK']
-    });
-    alert.present();
-  }	
 	
 	showAlert() {
 
@@ -81,7 +57,8 @@ var c=x3;
 	var x3=this.inp3;
 		var a=x1;
 		var b=x2;
-		var c=x3;}
+		var c=x3;
+	}
 
 		
 	tri_storony() {	
@@ -292,6 +269,15 @@ if (!isNaN(parseFloat(h)) && isFinite(h) &&(h>0)){
     alert.present();
 };};
 	
+	firstgo(){
+		this.navCtrl.push(FirstPage);
+	}
+	secondgo(){
+		this.navCtrl.push(SecondPage);
+	}
+	thirdgo(){
+		this.navCtrl.push(ThirdPage);
+	}
 } 
 
 
