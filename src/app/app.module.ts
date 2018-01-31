@@ -6,6 +6,8 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { FirstPage } from '../pages/first/first';
+import { SecondPage } from '../pages/second/second';
+import { ThirdPage } from '../pages/third/third';
 
 import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -17,7 +19,9 @@ import { NgModel } from '@angular/forms';
     MyApp,
     HomePage,
     ListPage,
-	FirstPage
+	FirstPage,
+	SecondPage,
+	ThirdPage,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import { NgModel } from '@angular/forms';
     MyApp,
     HomePage,
     ListPage,
-	FirstPage
+	FirstPage,
+	SecondPage,
+	ThirdPage,
   ],
   providers: [
     StatusBar,
