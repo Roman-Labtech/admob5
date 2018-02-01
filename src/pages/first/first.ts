@@ -59,63 +59,7 @@ export class FirstPage {
 		
 
 	//ygol_i_2_storony
-	
-	ygol_i_2_storony() {	
-	var a=Number(this.inp1);
-	var b=Number(this.inp2);	
-	var c=Number(this.inp4);
-	var s;
-   ////////////////////////////////
-		var xx;
-//Проверка на числа
-if (!isNaN(parseFloat(a)) && isFinite(a) &&(a>0)){
-if (!isNaN(parseFloat(b)) && isFinite(b) &&(b>0)){
-if (!isNaN(parseFloat(c)) && isFinite(c) &&(c>0 & c<180)){
-	  //Проверка на существование треугольника          
 
-	s=Math.sin(c / 180 * Math.PI);	
-	s=(0.5)*(s*a*b);	
-	let alert = this.alertCtrl.create({
-      title: 'New Friend!',
-      subTitle: 'Площадь равна S=' + s,
-      buttons: ['OK']
-    });
-    alert.present();
-			}
-			
-	
-    else{
-		    let alert = this.alertCtrl.create({
-      title: 'Ошибка!',
-      subTitle: 'Введите верное числовое значение. Треугольник с такими сторонами не существует',
-      buttons: ['OK']
-    });
-    alert.present();
-	
-	};
- }
-	else
-{
-
-	let alert = this.alertCtrl.create({
-      title: 'Ошибка!',
-      subTitle: 'Треугольник не существует. Введите корректные значения',
-      buttons: ['OK']
-    });
-    alert.present();
-}
-}
-	else
-{
-
-	let alert = this.alertCtrl.create({
-      title: 'Ошибка!',
-      subTitle: 'Треугольник не существует. Введите корректные значения',
-      buttons: ['OK']
-    });
-    alert.present();
-}};
- 
 	ygol_i_2_storony1() {
 		 let alert = this.alertCtrl.create({
       title: 'Ошибкаxxxxxxxxxx!',
