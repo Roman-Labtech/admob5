@@ -175,7 +175,7 @@ if (!isNaN(parseFloat(c)) && isFinite(c) &&(c>0 & c<180)){
     else{
 		    let alert = this.alertCtrl.create({
       title: 'Ошибка!',
-      subTitle: 'Введите верное числовое значение. Треугольник с такими сторонами не существует',
+      subTitle: 'Введите верное числовое значение. Угол должен быть меньше 180',
       buttons: ['OK']
     });
     alert.present();
@@ -206,8 +206,8 @@ if (!isNaN(parseFloat(c)) && isFinite(c) &&(c>0 & c<180)){
  
 	ygol_i_2_storony1() {
 		 let alert = this.alertCtrl.create({
-      title: 'Ошибкаxxxxxxxxxx!',
-      subTitle: 'Введите верное числовое значение. Треугольник с такими сторонами не существует',
+      title: 'Ошибка!',
+      subTitle: 'Введите верное числовое значение. Треугольник с таким сторонами не существует',
       buttons: ['OK']
     });
     alert.present();

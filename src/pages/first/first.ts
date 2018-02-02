@@ -62,18 +62,14 @@ export class FirstPage {
 
 	ygol_i_2_storony1() {
 		 let alert = this.alertCtrl.create({
-      title: 'Ошибкаxxxxxxxxxx!',
+      title: 'Ошибка!',
       subTitle: 'Введите верное числовое значение. Треугольник с такими сторонами не существует',
       buttons: ['OK']
     });
     alert.present();
 	};
 
-	ygol_i_2_storony2() {
-		function ygol_i_2_storony1();
-			
 
-	}
 			
 		//////////////
 	link3stor(){
