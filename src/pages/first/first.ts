@@ -85,8 +85,8 @@ export class FirstPage {
 	var h=Number(this.inp2);
 	
 //Проверка положительность введенных чисел
-if (!isNaN(parseFloat(a)) && isFinite(a) &&(a>0)){	
-if (!isNaN(parseFloat(h)) && isFinite(h) &&(h>0)){
+if (isFinite(a) &&(a>0)){	
+if (isFinite(h) &&(h>0)){
 
     s=(a)*0.5*h;
 	let alert = this.alertCtrl.create({
